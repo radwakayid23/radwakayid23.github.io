@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Portfolio</h2>
+            </div>
+            <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#work" class="nav-link">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero hero-modern">
+        <div class="hero-container-modern">
+            <div class="hero-content-modern">
+                <div class="hero-greeting">
+                    <span class="greeting-box">Hello There!</span>
+                </div>
+                <h1 class="hero-title-modern">
+                    I'm <span class="highlight-name">Olivia Smith</span>,<br>
+                    <span class="highlight-role">Product Designer</span><br>
+                    Based in USA.
+                </h1>
+                <p class="hero-desc-modern">
+                    I'm an experienced Product Designer with 18+ years in the field, collaborating with various companies and startups.
+                </p>
+                <div class="hero-buttons-modern">
+                    <a href="#work" class="btn btn-modern btn-filled"><i class="fas fa-play"></i> View My Portfolio</a>
+                    <a href="#contact" class="btn btn-modern btn-outline">Hire Me</a>
+                </div>
+            </div>
+            <div class="hero-image-modern">
+                <div class="profile-bg-shape"></div>
+                <img src="images/profile.jpg" alt="Olivia Smith" class="profile-img">
+                <div class="profile-badge">
+                    <span>Hire Me</span>
+                </div>
+                <div class="profile-role-badge">UI/UX Designer</div>
+            </div>
+        </div>
+        <div class="hero-categories-bar">
+            <div class="categories-scroll">
+                <span class="category-item">App Design</span>
+                <span class="category-sep">*</span>
+                <span class="category-item">Website Design</span>
+                <span class="category-sep">*</span>
+                <span class="category-item">Dashboard</span>
+                <span class="category-sep">*</span>
+                <span class="category-item">Wireframe</span>
+                <span class="category-sep">*</span>
+                <span class="category-item">Branding</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Services Section -->
+    <section class="services-section">
+        <div class="container services-container">
+            <div class="services-header">
+                <h2 class="services-title">My <span class="highlight-orange">Services</span></h2>
+                <p class="services-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            </div>
+            <div class="services-cards">
+                <div class="service-card">
+                    <div class="service-card-img">
+                        <img src="images/service-uiux.jpg" alt="UI/UX Design">
+                    </div>
+                    <div class="service-card-content">
+                        <h3>UI/UX Design</h3>
+                        <button class="service-arrow"><i class="fas fa-arrow-up-right"></i></button>
+                    </div>
+                </div>
+                <div class="service-card service-card-active">
+                    <div class="service-card-img">
+                        <img src="images/service-web.jpg" alt="Web Design">
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Web Design</h3>
+                        <button class="service-arrow service-arrow-active"><i class="fas fa-arrow-up-right"></i></button>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-img">
+                        <img src="images/service-landing.jpg" alt="Landing Page">
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Landing Page</h3>
+                        <button class="service-arrow"><i class="fas fa-arrow-up-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Work Experience Section -->
+    <section class="experience-section">
+        <div class="container experience-container">
+            <h2 class="experience-title">My Work Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-row">
+                    <div class="experience-company">
+                        <div class="company-name">Self-Employed, NYC</div>
+                        <div class="company-date">Sep 2020 - July 2023</div>
+                    </div>
+                    <div class="experience-dot-line">
+                        <div class="experience-dot experience-dot-active"></div>
+                        <div class="experience-line"></div>
+                    </div>
+                    <div class="experience-role">
+                        <div class="role-title">Visual Designer</div>
+                        <div class="role-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</div>
+                    </div>
+                </div>
+                <div class="experience-row">
+                    <div class="experience-company">
+                        <div class="company-name">Insightancer</div>
+                        <div class="company-date">Aug 2016 - Sep 2020</div>
+                    </div>
+                    <div class="experience-dot-line">
+                        <div class="experience-dot"></div>
+                        <div class="experience-line"></div>
+                    </div>
+                    <div class="experience-role">
+                        <div class="role-title">UI/UX Designer</div>
+                        <div class="role-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</div>
+                    </div>
+                </div>
+                <div class="experience-row">
+                    <div class="experience-company">
+                        <div class="company-name">KG Design Studio</div>
+                        <div class="company-date">Sep 2015 - Aug 2016</div>
+                    </div>
+                    <div class="experience-dot-line">
+                        <div class="experience-dot"></div>
+                    </div>
+                    <div class="experience-role">
+                        <div class="role-title">Web Designer</div>
+                        <div class="role-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate about creating meaningful design experiences</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a creative designer with over 5 years of experience crafting digital experiences that matter. My approach combines strategic thinking with artistic vision to create designs that not only look beautiful but also solve real problems.</p>
+                    <p>Specializing in UI/UX design, branding, and digital product design, I work closely with clients to understand their needs and deliver solutions that exceed expectations.</p>
+                    <div class="skills">
+                        <h3>Skills & Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">UI/UX Design</span>
+                            <span class="skill-tag">Branding</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Adobe Creative Suite</span>
+                            <span class="skill-tag">Prototyping</span>
+                            <span class="skill-tag">User Research</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Work</h2>
+                <p class="section-subtitle">A selection of my recent projects</p>
+            </div>
+            <div class="work-grid">
+                <div class="work-item" data-category="ui-ux">
+                    <div class="work-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="work-overlay">
+                            <div class="work-details">
+                                <h3>Mobile App Design</h3>
+                                <p>UI/UX Design, Prototyping</p>
+                                <button class="btn btn-small">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item" data-category="branding">
+                    <div class="work-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="work-overlay">
+                            <div class="work-details">
+                                <h3>Brand Identity</h3>
+                                <p>Branding, Logo Design</p>
+                                <button class="btn btn-small">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item" data-category="web">
+                    <div class="work-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <div class="work-overlay">
+                            <div class="work-details">
+                                <h3>Website Design</h3>
+                                <p>Web Design, Development</p>
+                                <button class="btn btn-small">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item" data-category="ui-ux">
+                    <div class="work-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <div class="work-overlay">
+                            <div class="work-details">
+                                <h3>Dashboard Design</h3>
+                                <p>UI/UX Design, Data Visualization</p>
+                                <button class="btn btn-small">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item" data-category="branding">
+                    <div class="work-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <div class="work-overlay">
+                            <div class="work-details">
+                                <h3>Marketing Materials</h3>
+                                <p>Print Design, Marketing</p>
+                                <button class="btn btn-small">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item" data-category="web">
+                    <div class="work-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="work-overlay">
+                            <div class="work-details">
+                                <h3>E-commerce Platform</h3>
+                                <p>Web Design, E-commerce</p>
+                                <button class="btn btn-small">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ui-ux">UI/UX</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">Ready to bring your ideas to life? Let's discuss your project</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>hello@designer.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>San Francisco, CA</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Portfolio</h3>
+                    <p>Creating beautiful digital experiences</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-behance"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Designer Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

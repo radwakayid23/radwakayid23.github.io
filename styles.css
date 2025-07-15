@@ -35,25 +35,58 @@ body {
 }
 
 .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
 }
 
-.nav-logo h2 {
-    font-weight: 700;
-    color: #2d3748;
-    font-size: 1.5rem;
+.site-logo {
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+    display: block;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    min-width: 60px;
 }
 
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 3.5rem;
+    align-items: center;
+    margin: 0;
+    flex: 1 1 auto;
+    justify-content: center;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    color: #4a5568;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: color 0.2s;
+    margin-right: 0;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.dark-mode-toggle:hover {
+    color: #3182ce;
 }
 
 .nav-link {
@@ -1313,4 +1346,422 @@ body.dark-mode .role-title {
 }
 body.dark-mode .role-desc {
     color: #b5bbc7;
+}
+
+/* Latest Case Study Section */
+.case-study-section {
+    background: #181c23;
+    padding: 70px 0 40px 0;
+}
+.case-study-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+.case-study-title {
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.case-study-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.case-study-card {
+    background: #23272f;
+    border-radius: 28px;
+    display: flex;
+    align-items: stretch;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+    overflow: hidden;
+    min-height: 260px;
+    position: relative;
+}
+.case-study-card-content {
+    flex: 1 1 55%;
+    padding: 38px 36px 38px 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+.case-study-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.7rem;
+    margin-bottom: 18px;
+}
+.case-study-tags {
+    color: #b5bbc7;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.case-study-name {
+    color: #fff;
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.case-study-desc {
+    color: #b5bbc7;
+    font-size: 1.05rem;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+.case-study-btn {
+    display: inline-block;
+    background: #23272f;
+    color: #fff;
+    border: 2px solid #2979ff;
+    border-radius: 30px;
+    padding: 10px 28px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+    box-shadow: 0 2px 8px rgba(41,121,255,0.08);
+}
+.case-study-btn:hover {
+    background: #2979ff;
+    color: #fff;
+    border-color: #2979ff;
+}
+.case-study-btn .arrow {
+    font-size: 1.1em;
+    margin-left: 6px;
+}
+.case-study-image {
+    flex: 1 1 45%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: none;
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 0 28px 28px 0;
+}
+.case-study-image img {
+    width: 100%;
+    max-width: 370px;
+    border-radius: 0 28px 28px 0;
+    object-fit: cover;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+}
+.case-study-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-top: 32px;
+    color: #b5bbc7;
+    font-size: 1rem;
+}
+.case-study-viewall {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 8px;
+    transition: color 0.2s;
+}
+.case-study-viewall:hover {
+    color: #2979ff;
+}
+
+@media (max-width: 900px) {
+    .case-study-card {
+        flex-direction: column;
+        border-radius: 22px;
+    }
+    .case-study-card-content {
+        padding: 28px 18px 22px 18px;
+    }
+    .case-study-image {
+        border-radius: 0 0 22px 22px;
+        justify-content: center;
+    }
+    .case-study-image img {
+        border-radius: 0 0 22px 22px;
+        max-width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .case-study-container {
+        padding: 0 6px;
+    }
+    .case-study-title {
+        font-size: 1.3rem;
+    }
+    .case-study-card-content {
+        padding: 18px 6px 12px 6px;
+    }
+}
+
+/* Light Mode for Case Study Section */
+body:not(.dark-mode) .case-study-section {
+    background: #f7fafc;
+}
+body:not(.dark-mode) .case-study-title {
+    color: #23272f;
+}
+body:not(.dark-mode) .case-study-card {
+    background: #fff;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+}
+body:not(.dark-mode) .case-study-card-content .case-study-name {
+    color: #23272f;
+}
+body:not(.dark-mode) .case-study-card-content .case-study-desc {
+    color: #4a5568;
+}
+body:not(.dark-mode) .case-study-btn {
+    background: #fff;
+    color: #2979ff;
+    border: 2px solid #2979ff;
+}
+body:not(.dark-mode) .case-study-btn:hover {
+    background: #2979ff;
+    color: #fff;
+}
+body:not(.dark-mode) .case-study-footer {
+    color: #4a5568;
+}
+body:not(.dark-mode) .case-study-viewall {
+    color: #2979ff;
+}
+body:not(.dark-mode) .case-study-viewall:hover {
+    color: #ff7043;
+}
+
+/* Hero Dev Section (Jensen style) */
+.hero-dev {
+    background: #181c23;
+    min-height: 600px;
+    padding-top: 60px;
+    padding-bottom: 0;
+    position: relative;
+    box-shadow: 0 2px 24px rgba(0,0,0,0.03);
+}
+.hero-dev-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    gap: 40px;
+}
+.hero-dev-content {
+    flex: 1 1 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 2;
+    min-width: 320px;
+}
+.hero-dev-greeting {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.hello-text {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #ff6b57;
+    border-radius: 50%;
+    margin-left: 8px;
+    margin-bottom: 3px;
+}
+.hero-dev-name {
+    font-size: 2.2rem;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 0.2em;
+}
+.name-highlight {
+    color: #fff;
+    font-weight: 700;
+}
+.hero-dev-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1.2em;
+}
+.hero-dev-buttons {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 1.5em;
+}
+.btn-dev {
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 14px 32px;
+    border: 2px solid #ff6b57;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+    display: inline-block;
+}
+.btn-filled {
+    background: #ff6b57;
+    color: #fff;
+}
+.btn-filled:hover {
+    background: #fff;
+    color: #ff6b57;
+}
+.btn-outline {
+    background: transparent;
+    color: #fff;
+}
+.btn-outline:hover {
+    background: #ff6b57;
+    color: #fff;
+}
+
+.hero-dev-image {
+    position: relative;
+    width: 340px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.dev-image-bg {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    left: 50%;
+    top: 60px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,107,87,0.25) 0%, rgba(24,28,35,0.0) 70%);
+    z-index: 1;
+    box-shadow: 0 0 80px 10px #ff6b5733;
+}
+.dev-profile-img {
+    position: relative;
+    width: 260px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 24px;
+    z-index: 2;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+}
+
+.hero-dev-stack-bar {
+    width: 100vw;
+    background: #23272f;
+    color: #b5bbc7;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 40px;
+    padding: 18px 0 14px 0;
+    box-shadow: 0 2px 12px rgba(34,34,34,0.06);
+    overflow-x: auto;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+}
+.stack-item {
+    color: #b5bbc7;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    opacity: 0.8;
+    font-size: 1.1rem;
+    padding: 0 10px;
+}
+
+@media (max-width: 1024px) {
+    .hero-dev-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        padding: 0 16px;
+    }
+    .hero-dev-image {
+        margin: 0 auto;
+    }
+}
+@media (max-width: 700px) {
+    .hero-dev {
+        padding-top: 40px;
+    }
+    .hero-dev-title {
+        font-size: 2rem;
+    }
+    .hero-dev-image {
+        width: 200px;
+        height: 220px;
+    }
+    .dev-image-bg {
+        width: 160px;
+        height: 160px;
+    }
+    .dev-profile-img {
+        width: 120px;
+        height: 160px;
+    }
+    .hero-dev-stack-bar {
+        font-size: 0.95rem;
+        padding: 10px 0 8px 0;
+        gap: 16px;
+    }
+}
+
+/* Light Mode for Hero Dev Section */
+body:not(.dark-mode) .hero-dev {
+    background: #f7fafc;
+}
+body:not(.dark-mode) .hero-dev-title,
+body:not(.dark-mode) .hero-dev-greeting,
+body:not(.dark-mode) .hero-dev-name {
+    color: #23272f;
+}
+body:not(.dark-mode) .btn-outline {
+    color: #23272f;
+    border-color: #ff6b57;
+}
+body:not(.dark-mode) .btn-outline:hover {
+    background: #ff6b57;
+    color: #fff;
+}
+body:not(.dark-mode) .hero-dev-stack-bar {
+    background: #fff;
+    color: #4a5568;
+}
+body:not(.dark-mode) .stack-item {
+    color: #4a5568;
 } 
+
+.profile-img-dark { display: none; }
+body.dark-mode .profile-img-light { display: none; }
+body.dark-mode .profile-img-dark { display: block; } 

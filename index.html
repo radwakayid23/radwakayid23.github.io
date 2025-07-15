@@ -13,29 +13,32 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h2>Portfolio</h2>
+                <img src="images/Logo-light.png" alt="Logo" class="site-logo">
             </div>
-            <button class="dark-mode-toggle" aria-label="Toggle dark mode">
-                <i class="fas fa-moon"></i>
-            </button>
+            </div>
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="#home" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
                     <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#work" class="nav-link">Work</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#work" class="nav-link">Projects</a>
                 </li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="nav-actions">
+                <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </div>
     </nav>
@@ -56,13 +59,14 @@
                     I'm an experienced Product Designer with 18+ years in the field, collaborating with various companies and startups.
                 </p>
                 <div class="hero-buttons-modern">
-                    <a href="#work" class="btn btn-modern btn-filled"><i class="fas fa-play"></i> View My Portfolio</a>
-                    <a href="#contact" class="btn btn-modern btn-outline">Hire Me</a>
+                    <a href="#work" class="btn btn-primary">View My Portfolio</a>
+                    <a href="#contact" class="btn btn-secondary">Hire Me</a>
                 </div>
             </div>
-            <div class="hero-image-modern">
+            <div class="hero-visual-modern">
                 <div class="profile-bg-shape"></div>
-                <img src="images/profile.jpg" alt="Olivia Smith" class="profile-img">
+                <img src="images/profile-light.png" alt="Olivia Smith" class="profile-img profile-img-light">
+                <img src="images/profile-dark.png" alt="Olivia Smith" class="profile-img profile-img-dark">
                 <div class="profile-badge">
                     <span>Hire Me</span>
                 </div>
@@ -205,104 +209,39 @@
         </div>
     </section>
 
-    <!-- Work Section -->
-    <section id="work" class="work">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Featured Work</h2>
-                <p class="section-subtitle">A selection of my recent projects</p>
-            </div>
-            <div class="work-grid">
-                <div class="work-item" data-category="ui-ux">
-                    <div class="work-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <div class="work-overlay">
-                            <div class="work-details">
-                                <h3>Mobile App Design</h3>
-                                <p>UI/UX Design, Prototyping</p>
-                                <button class="btn btn-small">View Project</button>
-                            </div>
-                        </div>
+    <!-- Latest Case Study Section -->
+    <section class="case-study-section">
+        <div class="container case-study-container">
+            <h2 class="case-study-title">Latest Case Study</h2>
+            <div class="case-study-list">
+                <div class="case-study-card">
+                    <div class="case-study-card-content">
+                        <div class="case-study-icon" style="background:#ff7043"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="case-study-tags">WEBSITE / LMS / MOBILE APP</div>
+                        <div class="case-study-name">E-Tutor - Education Learning Management System</div>
+                        <div class="case-study-desc">E-Tutor is an education, courses, and online (LMS) learning management system Figma template designed for people who want to start teaching online, create an LMS etc.</div>
+                        <a href="#" class="case-study-btn">View Case Study <span class="arrow">→</span></a>
+                    </div>
+                    <div class="case-study-image">
+                        <img src="images/case-study-1.jpg" alt="E-Tutor LMS">
                     </div>
                 </div>
-                <div class="work-item" data-category="branding">
-                    <div class="work-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-palette"></i>
-                        </div>
-                        <div class="work-overlay">
-                            <div class="work-details">
-                                <h3>Brand Identity</h3>
-                                <p>Branding, Logo Design</p>
-                                <button class="btn btn-small">View Project</button>
-                            </div>
-                        </div>
+                <div class="case-study-card">
+                    <div class="case-study-card-content">
+                        <div class="case-study-icon" style="background:#2979ff"><i class="fas fa-rocket"></i></div>
+                        <div class="case-study-tags">DASHBOARD / DIGITAL PRODUCT</div>
+                        <div class="case-study-name">Raple - Analytics Admin Dashboard UI Kit</div>
+                        <div class="case-study-desc">Jobpilot is a modern high-quality and well-organized job portal Laravel Script designed to connect people who are looking for suitable Jobs & Candidates.</div>
+                        <a href="#" class="case-study-btn">View Case Study <span class="arrow">→</span></a>
                     </div>
-                </div>
-                <div class="work-item" data-category="web">
-                    <div class="work-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-laptop"></i>
-                        </div>
-                        <div class="work-overlay">
-                            <div class="work-details">
-                                <h3>Website Design</h3>
-                                <p>Web Design, Development</p>
-                                <button class="btn btn-small">View Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="work-item" data-category="ui-ux">
-                    <div class="work-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-desktop"></i>
-                        </div>
-                        <div class="work-overlay">
-                            <div class="work-details">
-                                <h3>Dashboard Design</h3>
-                                <p>UI/UX Design, Data Visualization</p>
-                                <button class="btn btn-small">View Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="work-item" data-category="branding">
-                    <div class="work-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-paint-brush"></i>
-                        </div>
-                        <div class="work-overlay">
-                            <div class="work-details">
-                                <h3>Marketing Materials</h3>
-                                <p>Print Design, Marketing</p>
-                                <button class="btn btn-small">View Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="work-item" data-category="web">
-                    <div class="work-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div>
-                        <div class="work-overlay">
-                            <div class="work-details">
-                                <h3>E-commerce Platform</h3>
-                                <p>Web Design, E-commerce</p>
-                                <button class="btn btn-small">View Project</button>
-                            </div>
-                        </div>
+                    <div class="case-study-image">
+                        <img src="images/case-study-2.jpg" alt="Raple Dashboard">
                     </div>
                 </div>
             </div>
-            <div class="work-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="ui-ux">UI/UX</button>
-                <button class="filter-btn" data-filter="branding">Branding</button>
-                <button class="filter-btn" data-filter="web">Web Design</button>
+            <div class="case-study-footer">
+                <span>I have more case studies?</span>
+                <a href="#" class="case-study-viewall">View All <span class="arrow">→</span></a>
             </div>
         </div>
     </section>
